@@ -2,17 +2,17 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>OwlHub</title>
+  <title>Scripts</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: rgb(35, 35, 35);
+      background-color: #222222;
     }
 
     .header {
-      background-color: #c33df1;
+      background-color: #222222;
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -24,12 +24,18 @@
       height: 50px;
       background-color: #c33df1;
       border-radius: 50%;
-      filter: drop-shadow(0 0 5px #c33df1);
     }
 
     .logo img {
       width: 100%;
       height: 100%;
+      filter: brightness(0.2) saturate(500%) contrast(1000%) drop-shadow(0 0 5px #c33df1);
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
     }
 
     .button {
@@ -39,8 +45,6 @@
       background-color: #000;
       width: 200px;
       height: 100px;
-      margin-top: 20px;
-      margin-right: 20px;
       cursor: pointer;
       transition: all 0.3s ease;
     }
@@ -52,7 +56,6 @@
     .button img {
       width: 100%;
       height: auto;
-      filter: drop-shadow(0 0 5px #c33df1);
     }
 
     .button-text {
@@ -67,11 +70,12 @@
     <div class="logo">
       <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/script_120049.png" alt="Logo">
     </div>
-  </div>
-
-  <div class="button">
-    <img src="owlhub.png" alt="OwlHub">
-    <p class="button-text">Owl Hub</p>
+    <div class="button-container">
+      <div class="button">
+        <img src="owlhub.png" alt="OwlHub">
+        <p class="button-text">Owl Hub</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
